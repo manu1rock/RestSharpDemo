@@ -5,7 +5,7 @@ RestSharp is a powerful library to automate REST API using C#. Here you can find
 # Utilities
 Project has two helper classes to manage your framework in better way
 
-Helper - Helper Class to manage RestSharp
+API Helper - Helper Class to manage RestSharp
 
 Reporter - Reporter Class to manage reporting using Extent Report
 
