@@ -12,7 +12,6 @@ namespace APIDemo
     public static class Reporter
     {
         public static ExtentReports extentReports;
-        //public static ExtentReports extent;
         public static ExtentHtmlReporter htmlReporter;
         public static ExtentTest testCase;
 
@@ -25,7 +24,6 @@ namespace APIDemo
 
             extentReports = new ExtentReports();
             extentReports.AttachReporter(htmlReporter);
-            //extentReports = extent;
         }
 
         public static void CreateTest(string testName)
@@ -51,7 +49,7 @@ namespace APIDemo
             }
             else
             {
-                testCase.Pass("Test is failed");
+                testCase.Fail("Test is failed");
             }
         }
     }
