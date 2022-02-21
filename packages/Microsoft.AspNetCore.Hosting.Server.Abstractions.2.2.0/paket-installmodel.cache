@@ -1,0 +1,16 @@
+D: /lib
+D: /lib/netstandard2.0
+F: /lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+F: /lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D: /package
+D: /package/services
+D: /package/services/metadata
+D: /package/services/metadata/core-properties
+F: /package/services/metadata/core-properties/7668302208c142739712c12f31872592.psmdcp
+D: /_rels
+F: /_rels/.rels
+F: /.signature.p7s
+F: /microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg
+F: /microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512
+F: /microsoft.aspnetcore.hosting.server.abstractions.nuspec
+F: /[Content_Types].xml

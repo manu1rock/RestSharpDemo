@@ -1,0 +1,16 @@
+D: /lib
+D: /lib/netstandard2.0
+F: /lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.dll
+F: /lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.xml
+D: /package
+D: /package/services
+D: /package/services/metadata
+D: /package/services/metadata/core-properties
+F: /package/services/metadata/core-properties/de13a151124146eaa2f9b3ef0e27efac.psmdcp
+D: /_rels
+F: /_rels/.rels
+F: /.signature.p7s
+F: /microsoft.aspnetcore.authentication.core.2.2.0.nupkg
+F: /microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512
+F: /microsoft.aspnetcore.authentication.core.nuspec
+F: /[Content_Types].xml

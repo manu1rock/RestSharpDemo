@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TechTalk.SpecFlow</name>
+    </assembly>
+    <members>
+        <member name="T:TechTalk.SpecFlow.Analytics.AppInsights.AppInsightsEventTelemetry">
+            <summary>
+            For property names, check: https://github.com/microsoft/ApplicationInsights-Home/tree/master/EndpointSpecs/Schemas/Bond
+            For tags, check: https://github.com/microsoft/ApplicationInsights-Home/blob/master/EndpointSpecs/Schemas/Bond/ContextTagKeys.bond
+            </summary>
+        </member>
+        <member name="M:TechTalk.SpecFlow.Assist.InstanceComparisonExtensionMethods.IsEquivalentToInstance``1(TechTalk.SpecFlow.Table,``0)">
+            <summary>
+            Indicates whether the table is equivalent to the specified instance by comparing the values of all
+            columns against the properties of the instance.  Will return false after finding the first difference.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.Assist.IValueComparer">
+            <summary>
+            A class that will compare a key->value from a table to an actual value.
+            </summary>
+        </member>
+        <member name="M:TechTalk.SpecFlow.Assist.IValueComparer.CanCompare(System.Object)">
+            <summary>
+            Determines if this comparer can compare the actual value to a key->value set defined in a table.
+            </summary>
+            <returns><c>true</c> if this instance can compare the value to a key->value set in a table; otherwise, <c>false</c>.</returns>
+            <param name="actualValue">Actual value.</param>
+        </member>
+        <member name="M:TechTalk.SpecFlow.Assist.IValueComparer.Compare(System.String,System.Object)">
+            <summary>
+            Compare the expected value to the actual value.
+            </summary>
+            <param name="expectedValue">Expected value.</param>
+            <param name="actualValue">Actual value.</param>
+        </member>
+        <member name="T:TechTalk.SpecFlow.Assist.IValueRetriever">
+            <summary>
+            A class that will retrieve an object's actual value from a key->value in a table.
+            </summary>
+        </member>
+        <member name="M:TechTalk.SpecFlow.Assist.IValueRetriever.CanRetrieve(System.Collections.Generic.KeyValuePair{System.String,System.String},System.Type,System.Type)">
+            <summary>
+            Determines if this retriever can retrieve the actual value from a key->value set in a table.
+            </summary>
+            <returns><c>true</c> if this instance can retrieve the specified key->value; otherwise, <c>false</c>.</returns>
+            <param name="keyValuePair">Key value pair.</param>
+            <param name="targetType">The type of the object that is being built from the table.</param>
+            <param name="propertyType">The type of the property or member that is being set.</param>
+        </member>
+        <member name="M:TechTalk.SpecFlow.Assist.IValueRetriever.Retrieve(System.Collections.Generic.KeyValuePair{System.String,System.String},System.Type,System.Type)">
+            <summary>
+            Retrieve the value from a key-> value set, as the expected type on targetType.
+            </summary>
+            <param name="keyValuePair">Key value pair.</param>
+            <param name="targetType">The type of the object that is being built from the table.</param>
+            <param name="propertyType">The type of the property or member that is being set.</param>
+        </member>
+        <member name="M:TechTalk.SpecFlow.Assist.RowExtensionMethods.CreateInstance``1(TechTalk.SpecFlow.TableRow)">
+            <summary>
+            Creates a new instance of <typeparamref name="T"/> from the <see cref="T:TechTalk.SpecFlow.TableRow"/>.
+            </summary>
+            <typeparam name="T">The type of the instance to be created.</typeparam>
+            <param name="row">The table row.</param>
+            <returns>A new instance of <typeparamref name="T"/> filled with the data from the <see cref="T:TechTalk.SpecFlow.TableRow"/>.</returns>
+        </member>
+        <member name="M:TechTalk.SpecFlow.Assist.RowExtensionMethods.CreateInstance``1(TechTalk.SpecFlow.TableRow,System.Func{``0})">
+            <summary>
+            Creates a new instance of <typeparamref name="T"/> from the <see cref="T:TechTalk.SpecFlow.TableRow"/>.
+            </summary>
+            <typeparam name="T">The type of the instance to be created.</typeparam>
+            <param name="row">The table row.</param>
+            <param name="methodToCreateTheInstance">The method to create a new instance.</param>
+            <returns>A new instance of <typeparamref name="T"/> filled with the data from the <see cref="T:TechTalk.SpecFlow.TableRow"/>.</returns>
+        </member>
+        <member name="T:TechTalk.SpecFlow.BindingAttribute">
+            <summary>
+            Marker attribute that specifies that this class may contain bindings (step definitions, hooks, etc.)
+            </summary>
+        </member>
+        <member name="P:TechTalk.SpecFlow.StepDefinitionBaseAttribute.Culture">
+            <summary>
+            additional information in which culture the step is written
+            it does not affect the matching of the step
+            it is only for tooling support needed
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.GivenAttribute">
+            <summary>
+            Specifies a 'Given' step definition that matches for the provided regular expression.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.WhenAttribute">
+            <summary>
+            Specifies a 'When' step definition that matches for the provided regular expression.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.ThenAttribute">
+            <summary>
+            Specifies a 'Then' step definition that matches for the provided regular expression.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.StepDefinitionAttribute">
+            <summary>
+            Specifies a step definition that matches for the provided regular expression and any step kinds (given, when, then).
+            </summary>
+        </member>
+        <member name="M:TechTalk.SpecFlow.BindingSkeletons.StepTextAnalyzer.GetDateFormats">
+            <summary>
+            note: space separator not supported to prevent clashes
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.Bindings.AsyncHelpers">
+            <summary>
+            https://stackoverflow.com/questions/5095183/how-would-i-run-an-async-taskt-method-synchronously#answer-5097066
+            </summary>
+        </member>
+        <member name="M:TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync(System.Func{System.Threading.Tasks.Task})">
+            <summary>
+            Execute's an async <see cref="T:System.Threading.Tasks.Task`1"/> method which has a void return value synchronously
+            </summary>
+            <param name="task"><see cref="T:System.Threading.Tasks.Task`1"/> method to execute</param>
+        </member>
+        <member name="M:TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync``1(System.Func{System.Threading.Tasks.Task{``0}})">
+            <summary>
+            Execute's an async <see cref="T:System.Threading.Tasks.Task`1"/> method which has a T return type synchronously
+            </summary>
+            <typeparam name="T">Return Type</typeparam>
+            <param name="task"><see cref="T:System.Threading.Tasks.Task`1"/> method to execute</param>
+            <returns></returns>
+        </member>
+        <member name="P:TechTalk.SpecFlow.Bindings.Reflection.IBindingMethod.Type">
+            <summary>
+            The declaring type of the method.
+            </summary>
+        </member>
+        <member name="P:TechTalk.SpecFlow.Bindings.Reflection.IBindingMethod.ReturnType">
+            <summary>
+            The return type of the method or <value>null</value> for void methods.
+            </summary>
+        </member>
+        <member name="P:TechTalk.SpecFlow.Bindings.StepInstance.Keyword">
+            <summary>
+            Keyword (including trailing spaces) used in the original specs or <value>null</value> if unknown.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.Configuration.ObsoleteBehavior">
+            <summary>
+            Describes possibilities what to do when a test is marked with <see cref="T:System.ObsoleteAttribute"/>
+            The default is <see cref="F:TechTalk.SpecFlow.Configuration.ObsoleteBehavior.Warn"/> 
+            </summary>
+        </member>
+        <member name="M:TechTalk.SpecFlow.ColumnCouldNotBeBoundException.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:TechTalk.SpecFlow.ColumnCouldNotBeBoundException.#ctor(System.Collections.Generic.IList{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:TechTalk.SpecFlow.ColumnCouldNotBeBoundException.#ctor(System.String,System.Collections.Generic.IList{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:TechTalk.SpecFlow.ColumnCouldNotBeBoundException.#ctor(System.String,System.Exception,System.Collections.Generic.IList{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:TechTalk.SpecFlow.ColumnCouldNotBeBoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <inheritdoc />
+        </member>
+        <member name="P:TechTalk.SpecFlow.HookAttribute.Order">
+            <summary>
+            The order in which the hook will be executed. Lower numbers go first. 
+            Orders are only applicable for hooks of the same type. 
+            Hooks with the same priority will have non-deterministic execution order. 
+            Default value is 10,000.
+            </summary>
+        </member>
+        <member name="M:TechTalk.SpecFlow.BeforeTestRunAttribute.#ctor">
+            <summary>
+            Constructs a new BeforeTestRunAttribute with a default Order of 10000
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.BeforeScenarioAttribute">
+            <summary>
+            Specifies a hook to be executed before each scenario.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.BeforeAttribute">
+            <summary>
+            Specifies a hook to be executed before each scenario. This attribute is a synonym to <see cref="T:TechTalk.SpecFlow.BeforeScenarioAttribute"/>.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.AfterScenarioAttribute">
+            <summary>
+            Specifies a hook to be executed after each scenario.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.AfterAttribute">
+            <summary>
+            Specifies a hook to be executed after each scenario. This attribute is a synonym to <see cref="T:TechTalk.SpecFlow.AfterScenarioAttribute"/>.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.Infrastructure.ContextManager.StackedInternalContextManager`1">
+            <summary>
+            Implementation of internal context manager which keeps a stack of contexts, rather than a single one. 
+            This allows the contexts to be used when a new context is created before the previous context has been completed 
+            which is what happens when a step calls other steps. This means that the step contexts will be reported 
+            correctly even when there is a nesting of steps calling steps calling steps.
+            </summary>
+            <typeparam name="TContext">A type derived from SpecFlowContext, which needs to be managed  in a way</typeparam>
+        </member>
+        <member name="P:TechTalk.SpecFlow.Infrastructure.ContextManager.CurrentTopLevelStepDefinitionType">
+            <summary>
+            Holds the StepDefinitionType of the last step that was executed from the actual featrure file, excluding the types of the steps that were executed during the calling of a step
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.Infrastructure.ITestObjectResolver">
+            <summary>
+            Resolves user created test objects from different scopes (scenario, feature, test thread).
+            </summary>
+            <remarks>
+            <para>Notes to the implementors:</para>
+            <para>
+            The test objects might be dependent on particular SpecFlow infrastructure, therefore the implemented 
+            resolution logic should support resolving the following objects (from the provided SpecFlow container):
+            <see cref="T:TechTalk.SpecFlow.ScenarioContext"/>, <see cref="T:TechTalk.SpecFlow.FeatureContext"/>, <see cref="T:TechTalk.SpecFlow.TestThreadContext"/> and 
+            <see cref="T:BoDi.IObjectContainer"/> (to be able to resolve any other SpecFlow infrastucture). So basically 
+            the resolution of these classes has to be forwarded to the original container.
+            </para>
+            <para>
+            If the resolved (top level) object implements <see cref="T:TechTalk.SpecFlow.Infrastructure.IContainerDependentObject"/>, the method 
+            <see cref="M:TechTalk.SpecFlow.Infrastructure.IContainerDependentObject.SetObjectContainer(BoDi.IObjectContainer)"/> must be called, passing in the original 
+            SpecFlow container. (The <see cref="T:TechTalk.SpecFlow.Steps"/> base class needs this.)
+            </para>
+            </remarks>
+        </member>
+        <member name="M:TechTalk.SpecFlow.ScenarioContext.GetBindingInstance(System.Type)">
+            <summary>
+            Called by SpecFlow infrastructure when an instance of a binding class is needed.
+            </summary>
+            <param name="bindingType">The type of the binding class.</param>
+            <returns>The binding class instance</returns>
+            <remarks>
+            The binding classes are the classes with the [Binding] attribute, that might 
+            contain step definitions, hooks or step argument transformations. The method 
+            is called when any binding method needs to be called.
+            </remarks>
+        </member>
+        <member name="T:TechTalk.SpecFlow.ScopeAttribute">
+            <summary>
+            Restricts the binding attributes (step definition, hook, etc.) to be applied only in a specific scope.
+            </summary>
+        </member>
+        <member name="T:TechTalk.SpecFlow.Tracing.IThreadSafeTraceListener">
+            <summary>
+            Marker interface for trace listener that do not need queued execution
+            </summary>
+        </member>
+    </members>
+</doc>

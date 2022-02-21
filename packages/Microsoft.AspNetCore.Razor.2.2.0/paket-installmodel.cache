@@ -1,0 +1,16 @@
+D: /lib
+D: /lib/netstandard2.0
+F: /lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll
+F: /lib/netstandard2.0/Microsoft.AspNetCore.Razor.xml
+D: /package
+D: /package/services
+D: /package/services/metadata
+D: /package/services/metadata/core-properties
+F: /package/services/metadata/core-properties/8d87c267414e4e498feadfef8433a7ff.psmdcp
+D: /_rels
+F: /_rels/.rels
+F: /.signature.p7s
+F: /microsoft.aspnetcore.razor.2.2.0.nupkg
+F: /microsoft.aspnetcore.razor.2.2.0.nupkg.sha512
+F: /microsoft.aspnetcore.razor.nuspec
+F: /[Content_Types].xml

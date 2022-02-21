@@ -1,0 +1,16 @@
+D: /lib
+D: /lib/netstandard2.0
+F: /lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Abstractions.dll
+F: /lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Abstractions.xml
+D: /package
+D: /package/services
+D: /package/services/metadata
+D: /package/services/metadata/core-properties
+F: /package/services/metadata/core-properties/dfac73f1edb04707a9415e0aafc7a8f2.psmdcp
+D: /_rels
+F: /_rels/.rels
+F: /.signature.p7s
+F: /microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg
+F: /microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512
+F: /microsoft.aspnetcore.authentication.abstractions.nuspec
+F: /[Content_Types].xml
