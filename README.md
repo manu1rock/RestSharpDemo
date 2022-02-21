@@ -11,3 +11,6 @@ Reporter - Reporter Class to manage reporting using Extent Report
 
 You can go through videos here if you like
 https://www.youtube.com/watch?v=Y2L6rOJGu6w&list=PL_GzuQ9GmG0EYtFSyODKjFG0Ldvl178-u
+
+I have course on Udemy which covers in depth. Here is course link
+https://www.udemy.com/course/rest-api-testing-using-csharp-restsharp-and-specflow/?referralCode=813AC01FB87297C87E5C
